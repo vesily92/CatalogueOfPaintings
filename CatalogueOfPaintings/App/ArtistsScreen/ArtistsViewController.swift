@@ -1,5 +1,5 @@
 //
-//  PaintingsViewController.swift
+//  ArtistsViewController.swift
 //  CatalogueOfPaintings
 //
 //  Created by Vasilii Pronin on 16.02.2024.
@@ -7,37 +7,30 @@
 
 import UIKit
 
-final class PaintingsViewController: UIViewController {
+class ArtistsViewController: UIViewController {
     
-    private typealias DataSource = UICollectionViewDiffableDataSource<Int, Work>
-    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Work>
+    var coordinator: ICoordinator?
+    
+    private typealias DataSource = UICollectionViewDiffableDataSource<Int, Artist>
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Artist>
     
     private var collectionView: UICollectionView!
     private var dataSource: DataSource!
     
-    private let artist: Artist
-    
-    init(artist: Artist) {
-        self.artist = artist
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    private var artists: [Artist] = Bundle.main.decode(
+        [Artist].self, from: "artists.json"
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.rightBarButtonItem = editButtonItem
-        
+                
         setupCollectionView()
         createDataSource()
         
         dataSource?.apply(createSnapshot())
     }
-    
-    // MARK: - Private methods
+
+    // MARK: Private methods
     
     private func setupCollectionView() {
         collectionView = UICollectionView(
@@ -48,8 +41,8 @@ final class PaintingsViewController: UIViewController {
         collectionView.backgroundColor = .white
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.register(
-            PaintingCell.self,
-            forCellWithReuseIdentifier: PaintingCell.reuseIdentifier
+            ArtistCell.self,
+            forCellWithReuseIdentifier: ArtistCell.reuseIdentifier
         )
         
         view.addSubview(collectionView)
@@ -85,16 +78,16 @@ final class PaintingsViewController: UIViewController {
     private func createDataSource() {
         dataSource = DataSource(
             collectionView: collectionView
-        ) { collectionView, indexPath, painting in
+        ) { collectionView, indexPath, artist in
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: PaintingCell.reuseIdentifier,
-                for: indexPath
-            ) as? PaintingCell else {
+                    withReuseIdentifier: ArtistCell.reuseIdentifier,
+                    for: indexPath
+                  ) as? ArtistCell else {
                 return UICollectionViewCell()
             }
             
-            cell.configure(with: painting)
-            
+            cell.configure(with: artist)
+
             return cell
         }
     }
@@ -102,35 +95,18 @@ final class PaintingsViewController: UIViewController {
     private func createSnapshot() -> Snapshot {
         var snapshot = Snapshot()
         snapshot.appendSections([1])
-        snapshot.appendItems(artist.works)
+        snapshot.appendItems(artists)
         return snapshot
-    }
-    
-    private func delete(at index: Int) {
-        makeSnapshot(animated: true)
-    }
-    
-    private func makeSnapshot(animated: Bool = true) {
-        //        var snapshot = dataSource.snapshot()
-        //        let difference = colorModels.difference(from: snapshot.itemIdentifiers)
-        //        let currentIdentifiers = snapshot.itemIdentifiers
-        //
-        //        guard let newIdentifiers = currentIdentifiers.applying(difference) else {
-        //            return
-        //        }
-        //        snapshot.deleteItems(currentIdentifiers)
-        //        snapshot.appendItems(newIdentifiers)
-        //
-        //        dataSource.apply(snapshot, animatingDifferences: animated)
     }
 }
 
-extension PaintingsViewController: UICollectionViewDelegate {
+// MARK: - UICollectionViewDelegate
+
+extension ArtistsViewController: UICollectionViewDelegate {
     func collectionView(
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath
     ) {
-        //
+        coordinator?.showAllPaintingsScreen(with: artists[indexPath.item])
     }
 }
-

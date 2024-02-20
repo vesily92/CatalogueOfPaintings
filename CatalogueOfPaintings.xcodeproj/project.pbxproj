@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59AFEF382B7F86A300D98506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF372B7F86A300D98506 /* AppDelegate.swift */; };
-		59AFEF3A2B7F86A300D98506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF392B7F86A300D98506 /* SceneDelegate.swift */; };
-		59AFEF3C2B7F86A300D98506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF3B2B7F86A300D98506 /* ViewController.swift */; };
-		59AFEF3F2B7F86A300D98506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF3D2B7F86A300D98506 /* Main.storyboard */; };
-		59AFEF412B7F86A400D98506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF402B7F86A400D98506 /* Assets.xcassets */; };
-		59AFEF442B7F86A400D98506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF422B7F86A400D98506 /* LaunchScreen.storyboard */; };
+		59AFEF8F2B83A30400D98506 /* PaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF752B83A30400D98506 /* PaintingViewController.swift */; };
+		59AFEF902B83A30400D98506 /* PaintingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF772B83A30400D98506 /* PaintingScrollView.swift */; };
+		59AFEF912B83A30400D98506 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF792B83A30400D98506 /* AppCoordinator.swift */; };
+		59AFEF922B83A30400D98506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF7A2B83A30400D98506 /* AppDelegate.swift */; };
+		59AFEF932B83A30400D98506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF7B2B83A30400D98506 /* SceneDelegate.swift */; };
+		59AFEF942B83A30400D98506 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF7D2B83A30400D98506 /* ArtistsViewController.swift */; };
+		59AFEF952B83A30400D98506 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF7F2B83A30400D98506 /* ArtistCell.swift */; };
+		59AFEF962B83A30400D98506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF812B83A30400D98506 /* Assets.xcassets */; };
+		59AFEF972B83A30400D98506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF822B83A30400D98506 /* LaunchScreen.storyboard */; };
+		59AFEF982B83A30400D98506 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 59AFEF842B83A30400D98506 /* artists.json */; };
+		59AFEF9A2B83A30400D98506 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF872B83A30400D98506 /* Artists.swift */; };
+		59AFEF9B2B83A30400D98506 /* UICollectionViewCell + ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF892B83A30400D98506 /* UICollectionViewCell + ReuseIdentifier.swift */; };
+		59AFEF9C2B83A30400D98506 /* Bundle + Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF8A2B83A30400D98506 /* Bundle + Decodable.swift */; };
+		59AFEF9D2B83A30400D98506 /* PaintingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF8D2B83A30400D98506 /* PaintingCell.swift */; };
+		59AFEF9E2B83A30400D98506 /* AllPaintingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFEF8E2B83A30400D98506 /* AllPaintingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59AFEF342B7F86A300D98506 /* CatalogueOfPaintings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogueOfPaintings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		59AFEF372B7F86A300D98506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59AFEF392B7F86A300D98506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59AFEF3B2B7F86A300D98506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59AFEF3E2B7F86A300D98506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59AFEF402B7F86A400D98506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59AFEF432B7F86A400D98506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59AFEF452B7F86A400D98506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AFEF752B83A30400D98506 /* PaintingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingViewController.swift; sourceTree = "<group>"; };
+		59AFEF772B83A30400D98506 /* PaintingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingScrollView.swift; sourceTree = "<group>"; };
+		59AFEF792B83A30400D98506 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		59AFEF7A2B83A30400D98506 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59AFEF7B2B83A30400D98506 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		59AFEF7D2B83A30400D98506 /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
+		59AFEF7F2B83A30400D98506 /* ArtistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		59AFEF812B83A30400D98506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59AFEF832B83A30400D98506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59AFEF842B83A30400D98506 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		59AFEF852B83A30400D98506 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AFEF872B83A30400D98506 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
+		59AFEF892B83A30400D98506 /* UICollectionViewCell + ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell + ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		59AFEF8A2B83A30400D98506 /* Bundle + Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle + Decodable.swift"; sourceTree = "<group>"; };
+		59AFEF8D2B83A30400D98506 /* PaintingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingCell.swift; sourceTree = "<group>"; };
+		59AFEF8E2B83A30400D98506 /* AllPaintingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPaintingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +58,7 @@
 		59AFEF2B2B7F86A300D98506 = {
 			isa = PBXGroup;
 			children = (
-				59AFEF362B7F86A300D98506 /* CatalogueOfPaintings */,
+				59AFEF732B83A30400D98506 /* CatalogueOfPaintings */,
 				59AFEF352B7F86A300D98506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +71,107 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59AFEF362B7F86A300D98506 /* CatalogueOfPaintings */ = {
+		59AFEF732B83A30400D98506 /* CatalogueOfPaintings */ = {
 			isa = PBXGroup;
 			children = (
-				59AFEF372B7F86A300D98506 /* AppDelegate.swift */,
-				59AFEF392B7F86A300D98506 /* SceneDelegate.swift */,
-				59AFEF3B2B7F86A300D98506 /* ViewController.swift */,
-				59AFEF3D2B7F86A300D98506 /* Main.storyboard */,
-				59AFEF402B7F86A400D98506 /* Assets.xcassets */,
-				59AFEF422B7F86A400D98506 /* LaunchScreen.storyboard */,
-				59AFEF452B7F86A400D98506 /* Info.plist */,
+				59AFEF782B83A30400D98506 /* App */,
+				59AFEF802B83A30400D98506 /* Resources */,
+				59AFEF862B83A30400D98506 /* Models */,
+				59AFEF882B83A30400D98506 /* Extensions */,
 			);
 			path = CatalogueOfPaintings;
+			sourceTree = "<group>";
+		};
+		59AFEF742B83A30400D98506 /* PaintingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF752B83A30400D98506 /* PaintingViewController.swift */,
+				59AFEF762B83A30400D98506 /* Views */,
+			);
+			path = PaintingScreen;
+			sourceTree = "<group>";
+		};
+		59AFEF762B83A30400D98506 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF772B83A30400D98506 /* PaintingScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59AFEF782B83A30400D98506 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF792B83A30400D98506 /* AppCoordinator.swift */,
+				59AFEF7A2B83A30400D98506 /* AppDelegate.swift */,
+				59AFEF7B2B83A30400D98506 /* SceneDelegate.swift */,
+				59AFEF7C2B83A30400D98506 /* ArtistsScreen */,
+				59AFEF8B2B83A30400D98506 /* AllPaintingsScreen */,
+				59AFEF742B83A30400D98506 /* PaintingScreen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		59AFEF7C2B83A30400D98506 /* ArtistsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF7D2B83A30400D98506 /* ArtistsViewController.swift */,
+				59AFEF7E2B83A30400D98506 /* Cells */,
+			);
+			path = ArtistsScreen;
+			sourceTree = "<group>";
+		};
+		59AFEF7E2B83A30400D98506 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF7F2B83A30400D98506 /* ArtistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		59AFEF802B83A30400D98506 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF812B83A30400D98506 /* Assets.xcassets */,
+				59AFEF822B83A30400D98506 /* LaunchScreen.storyboard */,
+				59AFEF842B83A30400D98506 /* artists.json */,
+				59AFEF852B83A30400D98506 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59AFEF862B83A30400D98506 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF872B83A30400D98506 /* Artists.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59AFEF882B83A30400D98506 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF892B83A30400D98506 /* UICollectionViewCell + ReuseIdentifier.swift */,
+				59AFEF8A2B83A30400D98506 /* Bundle + Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		59AFEF8B2B83A30400D98506 /* AllPaintingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF8C2B83A30400D98506 /* Cells */,
+				59AFEF8E2B83A30400D98506 /* AllPaintingsViewController.swift */,
+			);
+			path = AllPaintingsScreen;
+			sourceTree = "<group>";
+		};
+		59AFEF8C2B83A30400D98506 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59AFEF8D2B83A30400D98506 /* PaintingCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59AFEF442B7F86A400D98506 /* LaunchScreen.storyboard in Resources */,
-				59AFEF412B7F86A400D98506 /* Assets.xcassets in Resources */,
-				59AFEF3F2B7F86A300D98506 /* Main.storyboard in Resources */,
+				59AFEF962B83A30400D98506 /* Assets.xcassets in Resources */,
+				59AFEF982B83A30400D98506 /* artists.json in Resources */,
+				59AFEF972B83A30400D98506 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,27 +245,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59AFEF3C2B7F86A300D98506 /* ViewController.swift in Sources */,
-				59AFEF382B7F86A300D98506 /* AppDelegate.swift in Sources */,
-				59AFEF3A2B7F86A300D98506 /* SceneDelegate.swift in Sources */,
+				59AFEF9B2B83A30400D98506 /* UICollectionViewCell + ReuseIdentifier.swift in Sources */,
+				59AFEF932B83A30400D98506 /* SceneDelegate.swift in Sources */,
+				59AFEF9D2B83A30400D98506 /* PaintingCell.swift in Sources */,
+				59AFEF922B83A30400D98506 /* AppDelegate.swift in Sources */,
+				59AFEF9A2B83A30400D98506 /* Artists.swift in Sources */,
+				59AFEF952B83A30400D98506 /* ArtistCell.swift in Sources */,
+				59AFEF912B83A30400D98506 /* AppCoordinator.swift in Sources */,
+				59AFEF942B83A30400D98506 /* ArtistsViewController.swift in Sources */,
+				59AFEF9E2B83A30400D98506 /* AllPaintingsViewController.swift in Sources */,
+				59AFEF8F2B83A30400D98506 /* PaintingViewController.swift in Sources */,
+				59AFEF902B83A30400D98506 /* PaintingScrollView.swift in Sources */,
+				59AFEF9C2B83A30400D98506 /* Bundle + Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59AFEF3D2B7F86A300D98506 /* Main.storyboard */ = {
+		59AFEF822B83A30400D98506 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59AFEF3E2B7F86A300D98506 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		59AFEF422B7F86A400D98506 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59AFEF432B7F86A400D98506 /* Base */,
+				59AFEF832B83A30400D98506 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -294,10 +402,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J64K7CHM53;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatalogueOfPaintings/Info.plist;
+				INFOPLIST_FILE = CatalogueOfPaintings/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +429,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J64K7CHM53;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatalogueOfPaintings/Info.plist;
+				INFOPLIST_FILE = CatalogueOfPaintings/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

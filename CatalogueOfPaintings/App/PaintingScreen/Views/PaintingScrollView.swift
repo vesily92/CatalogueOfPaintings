@@ -67,16 +67,16 @@ final class PaintingScrollView: UIScrollView {
         let xScale = bounds.size.width / imageView.bounds.width
         let yScale = bounds.size.height / imageView.bounds.height
         let minScale = min(xScale, yScale)
-        self.minimumZoomScale = minScale
+        minimumZoomScale = minScale
         
-        self.zoomScale = minScale
-        self.maximumZoomScale = minScale * 4
+        zoomScale = minScale
+        maximumZoomScale = minScale * 4
     }
     
     private func centerImage() {
         let offsetX = max((bounds.width - contentSize.width) / 2, 0)
         let offsetY = max((bounds.height - contentSize.height) / 2, 0)
-        self.contentInset = UIEdgeInsets(
+        contentInset = UIEdgeInsets(
             top: offsetY,
             left: offsetX,
             bottom: 0,
